@@ -17,7 +17,7 @@ public class AbstractFactoryPatternDemo {
 
         GUIFactory darkFactory = new DarkThemeFactory();
         AbstractFactoryPatternDemo darkThemeDemo = new AbstractFactoryPatternDemo(darkFactory);
-        System.out.println("\nDark Theme UI:");
+        System.out.println("Dark Theme UI:");
         darkThemeDemo.renderUI();
     }
 

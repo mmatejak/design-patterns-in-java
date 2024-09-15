@@ -20,7 +20,7 @@ public class VisitorPatternDemo {
         }
 
         System.out.println("Total Value: $" + valueVisitor.getTotalValue());
-        System.out.println("\nReport:");
+        System.out.println("Report:");
         System.out.println(reportVisitor.getReport());
     }
 }

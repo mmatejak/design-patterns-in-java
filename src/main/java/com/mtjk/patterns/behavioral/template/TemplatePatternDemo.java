@@ -8,7 +8,7 @@ public class TemplatePatternDemo {
         System.out.println("Processing PDF document:");
         pdfProcessor.processDocument();
 
-        System.out.println("\nProcessing Word document:");
+        System.out.println("Processing Word document:");
         wordProcessor.processDocument();
     }
 }
