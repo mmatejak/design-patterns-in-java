@@ -1,7 +1,7 @@
 package com.mtjk.patterns.behavioral.state;
 
 public class ReadyState implements State {
-    private VendingMachine vendingMachine;
+    private final VendingMachine vendingMachine;
 
     public ReadyState(VendingMachine vendingMachine) {
         this.vendingMachine = vendingMachine;

@@ -1,7 +1,7 @@
 package com.mtjk.patterns.behavioral.visitor;
 
 public class ReportVisitor implements Visitor {
-    private StringBuilder report = new StringBuilder();
+    private final StringBuilder report = new StringBuilder();
 
     @Override
     public void visit(Book book) {

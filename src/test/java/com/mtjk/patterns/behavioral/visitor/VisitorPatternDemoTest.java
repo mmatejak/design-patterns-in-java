@@ -52,10 +52,12 @@ class VisitorPatternDemoTest {
             element.accept(reportVisitor);
         }
 
-        String expectedReport = "Book: The Great Gatsby - $10.99\n" +
-                "Magazine: National Geographic - $5.99\n" +
-                "Book: 1984 - $8.99\n" +
-                "Magazine: Time - $4.99\n";
+        String expectedReport = """
+                Book: The Great Gatsby - $10.99
+                Magazine: National Geographic - $5.99
+                Book: 1984 - $8.99
+                Magazine: Time - $4.99
+                """;
 
         assertEquals(expectedReport, reportVisitor.getReport());
     }

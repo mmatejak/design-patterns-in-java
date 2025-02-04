@@ -1,7 +1,7 @@
 package com.mtjk.patterns.behavioral.iterator;
 
 public class BookIterator implements Iterator {
-    private Book[] books;
+    private final Book[] books;
     private int position = 0;
 
     public BookIterator(Book[] books) {

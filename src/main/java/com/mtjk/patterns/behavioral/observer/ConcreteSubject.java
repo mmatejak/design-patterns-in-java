@@ -1,18 +1,17 @@
 package com.mtjk.patterns.behavioral.observer;
 
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class ConcreteSubject implements Subject {
     private final List<Observer> observers;
+    @Getter
     private String state;
 
     public ConcreteSubject() {
         this.observers = new ArrayList<>();
-    }
-
-    public String getState() {
-        return state;
     }
 
     public void setState(String state) {

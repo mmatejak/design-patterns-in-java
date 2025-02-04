@@ -1,7 +1,7 @@
 package com.mtjk.patterns.structural.decorator;
 
 public class SimpleText implements Text {
-    private String content;
+    private final String content;
 
     public SimpleText(String content) {
         this.content = content;

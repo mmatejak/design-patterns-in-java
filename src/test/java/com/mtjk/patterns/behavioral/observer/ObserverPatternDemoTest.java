@@ -33,12 +33,14 @@ class ObserverPatternDemoTest {
         subject.setState("State 1");
         subject.setState("State 2");
 
-        String expectedOutput = "Observer 1 received update: State 1\n" +
-                "Observer 2 received update: State 1\n" +
-                "Observer 3 received update: State 1\n" +
-                "Observer 1 received update: State 2\n" +
-                "Observer 2 received update: State 2\n" +
-                "Observer 3 received update: State 2\n";
+        String expectedOutput = """
+                Observer 1 received update: State 1
+                Observer 2 received update: State 1
+                Observer 3 received update: State 1
+                Observer 1 received update: State 2
+                Observer 2 received update: State 2
+                Observer 3 received update: State 2
+                """;
 
         // Normalize line separators
         String normalizedActualOutput = outputStream.toString().replace("\r\n", "\n");

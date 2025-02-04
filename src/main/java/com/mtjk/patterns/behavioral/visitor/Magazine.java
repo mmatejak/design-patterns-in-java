@@ -3,8 +3,8 @@ package com.mtjk.patterns.behavioral.visitor;
 import java.math.BigDecimal;
 
 public class Magazine implements Element {
-    private String title;
-    private BigDecimal price;
+    private final String title;
+    private final BigDecimal price;
 
     public Magazine(String title, BigDecimal price) {
         this.title = title;

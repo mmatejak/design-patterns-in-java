@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Composite implements Component {
-    private String name;
-    private List<Component> children = new ArrayList<>();
+    private final String name;
+    private final List<Component> children = new ArrayList<>();
 
     public Composite(String name) {
         this.name = name;

@@ -1,9 +1,9 @@
 package com.mtjk.patterns.creative.builder;
 
 public class Computer {
-    private String CPU;
-    private int RAM;
-    private int storage;
+    private final String CPU;
+    private final int RAM;
+    private final int storage;
 
     public Computer(Builder builder) {
         this.CPU = builder.CPU;

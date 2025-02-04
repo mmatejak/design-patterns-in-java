@@ -5,7 +5,7 @@ import lombok.Getter;
 @Getter
 public class DocumentProxy implements Document {
     private RealDocument realDocument;
-    private String filename;
+    private final String filename;
 
     public DocumentProxy(String filename) {
         this.filename = filename;

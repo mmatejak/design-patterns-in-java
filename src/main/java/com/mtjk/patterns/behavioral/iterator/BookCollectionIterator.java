@@ -1,7 +1,7 @@
 package com.mtjk.patterns.behavioral.iterator;
 
 public class BookCollectionIterator implements Iterable<Book> {
-    private BookCollection bookCollection;
+    private final BookCollection bookCollection;
 
     public BookCollectionIterator(BookCollection bookCollection) {
         this.bookCollection = bookCollection;

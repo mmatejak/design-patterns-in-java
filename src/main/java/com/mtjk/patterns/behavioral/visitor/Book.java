@@ -3,8 +3,8 @@ package com.mtjk.patterns.behavioral.visitor;
 import java.math.BigDecimal;
 
 public class Book implements Element {
-    private String title;
-    private BigDecimal price;
+    private final String title;
+    private final BigDecimal price;
 
     public Book(String title, BigDecimal price) {
         this.title = title;

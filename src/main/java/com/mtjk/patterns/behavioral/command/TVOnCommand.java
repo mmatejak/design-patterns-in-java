@@ -1,7 +1,7 @@
 package com.mtjk.patterns.behavioral.command;
 
 public class TVOnCommand implements Command {
-    private TV tv;
+    private final TV tv;
 
     public TVOnCommand(TV tv) {
         this.tv = tv;

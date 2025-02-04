@@ -21,11 +21,13 @@ class IteratorPatternDemoTest {
     void testIteratorPattern() {
         IteratorPatternDemo.main(new String[]{});
 
-        String expectedOutput = "Iterating over book collection:\n" +
-                "Book [Title: Effective Java, Author: Joshua Bloch]\n" +
-                "Book [Title: Clean Code, Author: Robert C. Martin]\n" +
-                "Book [Title: Design Patterns, Author: Erich Gamma]\n" +
-                "Book [Title: Java Concurrency in Practice, Author: Brian Goetz]\n";
+        String expectedOutput = """
+                Iterating over book collection:
+                Book [Title: Effective Java, Author: Joshua Bloch]
+                Book [Title: Clean Code, Author: Robert C. Martin]
+                Book [Title: Design Patterns, Author: Erich Gamma]
+                Book [Title: Java Concurrency in Practice, Author: Brian Goetz]
+                """;
 
         // Normalize line separators
         String normalizedActualOutput = outputStream.toString().replace("\r\n", "\n");

@@ -21,12 +21,14 @@ class ChainOfResponsibilityPatternDemoTest {
     void testChainOfResponsibility() {
         ChainOfResponsibilityPatternDemo.main(new String[]{});
 
-        String expectedOutput = "Standard Console::Logger: This is an information.\n" +
-                "File::Logger: This is a debug level information.\n" +
-                "Standard Console::Logger: This is a debug level information.\n" +
-                "Error Console::Logger: This is an error information.\n" +
-                "File::Logger: This is an error information.\n" +
-                "Standard Console::Logger: This is an error information.\n";
+        String expectedOutput = """
+                Standard Console::Logger: This is an information.
+                File::Logger: This is a debug level information.
+                Standard Console::Logger: This is a debug level information.
+                Error Console::Logger: This is an error information.
+                File::Logger: This is an error information.
+                Standard Console::Logger: This is an error information.
+                """;
 
         // Normalize line separators
         String normalizedActualOutput = outputStream.toString().replace("\r\n", "\n");

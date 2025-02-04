@@ -1,9 +1,9 @@
 package com.mtjk.patterns.structural.facade;
 
 public class ComputerFacade {
-    private CPU cpu;
-    private Memory memory;
-    private HardDrive hardDrive;
+    private final CPU cpu;
+    private final Memory memory;
+    private final HardDrive hardDrive;
 
     public ComputerFacade(CPU cpu, Memory memory, HardDrive hardDrive) {
         this.cpu = cpu;

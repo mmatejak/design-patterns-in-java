@@ -24,8 +24,10 @@ class AbstractFactoryPatternDemoTest {
         AbstractFactoryPatternDemo lightThemeDemo = new AbstractFactoryPatternDemo(lightFactory);
         lightThemeDemo.renderUI();
 
-        String expectedOutput = "Rendering button in light theme.\n" +
-                "Rendering text field in light theme.\n";
+        String expectedOutput = """
+                Rendering button in light theme.
+                Rendering text field in light theme.
+                """;
 
         // Normalize line separators
         String normalizedActualOutput = outputStream.toString().replace("\r\n", "\n");
@@ -40,8 +42,10 @@ class AbstractFactoryPatternDemoTest {
         AbstractFactoryPatternDemo darkThemeDemo = new AbstractFactoryPatternDemo(darkFactory);
         darkThemeDemo.renderUI();
 
-        String expectedOutput = "Rendering button in dark theme.\n" +
-                "Rendering text field in dark theme.\n";
+        String expectedOutput = """
+                Rendering button in dark theme.
+                Rendering text field in dark theme.
+                """;
 
         // Normalize line separators
         String normalizedActualOutput = outputStream.toString().replace("\r\n", "\n");

@@ -1,7 +1,7 @@
 package com.mtjk.patterns.creative.prototype;
 
 public class Motorcycle implements Vehicle {
-    private String type = "Motorcycle";
+    private final String type = "Motorcycle";
 
     @Override
     public Vehicle clone() {

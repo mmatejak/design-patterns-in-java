@@ -1,7 +1,7 @@
 package com.mtjk.patterns.creative.builder;
 
 public class ComputerDirector {
-    private ComputerBuilder builder;
+    private final ComputerBuilder builder;
 
     public ComputerDirector(ComputerBuilder builder) {
         this.builder = builder;

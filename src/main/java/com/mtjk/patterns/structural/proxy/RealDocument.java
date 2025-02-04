@@ -1,7 +1,7 @@
 package com.mtjk.patterns.structural.proxy;
 
 public class RealDocument implements Document {
-    private String filename;
+    private final String filename;
 
     public RealDocument(String filename) {
         this.filename = filename;

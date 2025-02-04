@@ -35,14 +35,16 @@ class MediatorPatternDemoTest {
         user1.send("Hello everyone!");
         user2.send("Hi Alice!");
 
-        String expectedOutput = "Alice sends: Hello everyone!\n" +
-                "Bob receives: Hello everyone!\n" +
-                "Charlie receives: Hello everyone!\n" +
-                "Diana receives: Hello everyone!\n" +
-                "Bob sends: Hi Alice!\n" +
-                "Alice receives: Hi Alice!\n" +
-                "Charlie receives: Hi Alice!\n" +
-                "Diana receives: Hi Alice!\n";
+        String expectedOutput = """
+                Alice sends: Hello everyone!
+                Bob receives: Hello everyone!
+                Charlie receives: Hello everyone!
+                Diana receives: Hello everyone!
+                Bob sends: Hi Alice!
+                Alice receives: Hi Alice!
+                Charlie receives: Hi Alice!
+                Diana receives: Hi Alice!
+                """;
 
         // Normalize line separators
         String normalizedActualOutput = outputStream.toString().replace("\r\n", "\n");

@@ -23,9 +23,11 @@ class TemplatePatternDemoTest {
         AbstractDocumentProcessor processor = new PDFDocumentProcessor();
         processor.processDocument();
 
-        String expectedOutput = "Loading PDF document.\n" +
-                "Rendering PDF document.\n" +
-                "Saving PDF document.\n";
+        String expectedOutput = """
+                Loading PDF document.
+                Rendering PDF document.
+                Saving PDF document.
+                """;
 
         // Normalize line separators
         String normalizedActualOutput = outputStream.toString().replace("\r\n", "\n");
@@ -39,9 +41,11 @@ class TemplatePatternDemoTest {
         AbstractDocumentProcessor processor = new WordDocumentProcessor();
         processor.processDocument();
 
-        String expectedOutput = "Loading Word document.\n" +
-                "Rendering Word document.\n" +
-                "Saving Word document.\n";
+        String expectedOutput = """
+                Loading Word document.
+                Rendering Word document.
+                Saving Word document.
+                """;
 
         // Normalize line separators
         String normalizedActualOutput = outputStream.toString().replace("\r\n", "\n");

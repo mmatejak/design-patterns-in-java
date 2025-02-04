@@ -6,7 +6,7 @@ import lombok.Getter;
 public class BookCollection {
     private static final int MAX_BOOKS = 5;
     private int numberOfBooks = 0;
-    private Book[] books;
+    private final Book[] books;
 
     public BookCollection() {
         books = new Book[MAX_BOOKS];

@@ -1,7 +1,7 @@
 package com.mtjk.patterns.structural.composite;
 
 public class Leaf implements Component {
-    private String name;
+    private final String name;
 
     public Leaf(String name) {
         this.name = name;

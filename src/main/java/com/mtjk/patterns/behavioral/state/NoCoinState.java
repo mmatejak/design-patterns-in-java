@@ -1,7 +1,7 @@
 package com.mtjk.patterns.behavioral.state;
 
 public class NoCoinState implements State {
-    private VendingMachine vendingMachine;
+    private final VendingMachine vendingMachine;
 
     public NoCoinState(VendingMachine vendingMachine) {
         this.vendingMachine = vendingMachine;

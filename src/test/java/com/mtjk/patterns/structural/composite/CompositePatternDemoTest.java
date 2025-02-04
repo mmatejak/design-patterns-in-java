@@ -37,12 +37,14 @@ class CompositePatternDemoTest {
 
         rootFolder.showDetails();
 
-        String expectedOutput = "Folder: RootFolder\n" +
-                "Folder: Folder1\n" +
-                "File: File1.txt\n" +
-                "File: File2.txt\n" +
-                "Folder: Folder2\n" +
-                "File: File3.txt\n";
+        String expectedOutput = """
+                Folder: RootFolder
+                Folder: Folder1
+                File: File1.txt
+                File: File2.txt
+                Folder: Folder2
+                File: File3.txt
+                """;
 
         // Normalize line separators
         String normalizedActualOutput = outputStream.toString().replace("\r\n", "\n");

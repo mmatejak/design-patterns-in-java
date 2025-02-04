@@ -4,10 +4,14 @@ import lombok.Getter;
 
 @Getter
 public class VendingMachine {
-    private State noCoinState;
-    private State hasCoinState;
-    private State soldOutState;
+    @Getter
+    private final State noCoinState;
+    @Getter
+    private final State hasCoinState;
+    @Getter
+    private final State soldOutState;
     private State currentState;
+    @Getter
     private int count;
 
     public VendingMachine(int numberOfDrinks) {
@@ -25,18 +29,6 @@ public class VendingMachine {
 
     public void setState(State newState) {
         currentState = newState;
-    }
-
-    public State getNoCoinState() {
-        return noCoinState;
-    }
-
-    public State getHasCoinState() {
-        return hasCoinState;
-    }
-
-    public State getSoldOutState() {
-        return soldOutState;
     }
 
     public void insertCoin() {
@@ -64,9 +56,5 @@ public class VendingMachine {
                 setState(noCoinState);
             }
         }
-    }
-
-    public int getCount() {
-        return count;
     }
 }

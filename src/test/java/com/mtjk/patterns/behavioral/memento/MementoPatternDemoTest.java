@@ -38,9 +38,11 @@ class MementoPatternDemoTest {
         textEditor.restoreFromMemento(caretaker.getMemento(0));
         System.out.println("Restored to: " + textEditor.getText());
 
-        String expectedOutput = "Current Text: State #3: Hello, World!!!\n" +
-                "Restored to: State #2: Hello, World\n" +
-                "Restored to: State #1: Hello\n";
+        String expectedOutput = """
+                Current Text: State #3: Hello, World!!!
+                Restored to: State #2: Hello, World
+                Restored to: State #1: Hello
+                """;
 
         // Normalize line separators
         String normalizedActualOutput = outputStream.toString().replace("\r\n", "\n");
